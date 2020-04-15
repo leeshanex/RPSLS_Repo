@@ -10,6 +10,9 @@ namespace RPSLS_Project
     {
         //member variables
 
+       
+
+
         //constructor
         public Human()
         { 
