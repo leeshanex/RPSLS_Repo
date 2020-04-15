@@ -9,20 +9,19 @@ namespace RPSLS_Project
     public class Player
     {
         //member variables
-        int humanScore;
-        int computerScore;
+        public int playerScore;
         public List<string> gestures;
        
 
         //constructor
         public Player()
         {
-            humanScore = 0;
-            computerScore = 0;
+           
             gestures = new List<string>() { new string("Rock") };
             
         }
         //methods
 
     }
+
 }

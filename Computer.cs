@@ -13,7 +13,7 @@ namespace RPSLS_Project
         //constructor
         public Computer()
         {
-
+            playerScore = 0;
         }
         //methods
     }

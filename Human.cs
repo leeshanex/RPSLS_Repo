@@ -12,8 +12,8 @@ namespace RPSLS_Project
 
         //constructor
         public Human()
-        {
-
+        { 
+            playerScore = 0;
         }
         //methods
     }
