@@ -21,7 +21,8 @@ namespace RPSLS_Project
         //methods
         public override void ChooseGesture()
         {
-            throw new NotImplementedException();
+            //This method will be setting the "gestureChoice" member variable to an actual choice , ie "rokc" or "spock", etc.
+            //How does a human make that choice?
         }
     }
 }
