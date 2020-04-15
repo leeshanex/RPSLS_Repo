@@ -17,7 +17,7 @@ namespace RPSLS_Project
         public Player()
         {
            
-            gestures = new List<string>() { new string("Rock") };
+            gestures = new List<string>() { "Rock", "Paper", "Scissor", "Lizard", "Spock" };
             
         }
         //methods

@@ -19,5 +19,9 @@ namespace RPSLS_Project
             playerScore = 0;
         }
         //methods
+        public override void ChooseGesture()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
