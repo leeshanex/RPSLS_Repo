@@ -16,7 +16,7 @@ namespace RPSLS_Project
         public Game()
         {
             player1 = new Human();
-            player2 = new Computer();
+            
 
         }
         //membermethods
@@ -26,7 +26,26 @@ namespace RPSLS_Project
         }
         public void DisplayRules()
         {
-            Console.WriteLine(" Rock, Paper, Scissor, Lizard, Spock " "dsdsada" );
+            Console.WriteLine(" Rock, Paper, Scissor, Lizard, Spock ");
+            ///Console.WriteLine(" Rules: " ); TO DO <<<
+        }
+        public void ChooseGameMode()
+        {
+            Console.WriteLine("Please enter 1 for One player mode, or 2 for Two player mode");
+            string userInput = Console.ReadLine();
+            if(userInput == "1")
+            {
+                player2 = new Computer();
+            }
+            else if (userInput == "2")
+            {
+                player2 = new Human();
+            }
+            else
+            {
+                Console.WriteLine("Incorrect input please try again");
+            }
+
         }
     }
 }
