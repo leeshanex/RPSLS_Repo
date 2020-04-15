@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace RPSLS_Project
 {
-    class Game
+    public class Game
     {
+        public Game()
+        {
+
+        }
     }
 }
