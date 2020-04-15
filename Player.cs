@@ -21,6 +21,7 @@ namespace RPSLS_Project
             
         }
         //methods
+        public abstract void ChooseGesture();
 
     }
 

@@ -22,7 +22,10 @@ namespace RPSLS_Project
         //membermethods
         public void RunGame()
         {
-
+            DisplayRules();
+            ChooseGameMode();
+            player1.ChooseGesture();
+            player2.ChooseGesture();
         }
         public void DisplayRules()
         {
