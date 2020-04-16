@@ -24,6 +24,7 @@ namespace RPSLS_Project
         {
             DisplayRules();
             ChooseGameMode();
+            
             while (player1.playerScore < 3 && player2.playerScore < 3)
             {
                 DisplayScore();
@@ -31,8 +32,8 @@ namespace RPSLS_Project
                 player1.ChooseGesture();
                 player2.ChooseGesture();
                 CompareGestures();
+                DetermineWinner();
             }
-            DetermineWinner();
             Console.ReadLine();
         }
         public void DisplayRules()
