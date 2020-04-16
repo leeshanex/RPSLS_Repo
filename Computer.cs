@@ -25,13 +25,19 @@ namespace RPSLS_Project
             //How can a computer choose one of those 5 options by itself?
             Random r = new Random();
             int gestureChoice = r.Next(gestures.Count);
-            //gestureChoice = randomGesture.Next(); TODO //find the 
+          
             bool isComputerTurn = true;
             while (gestureChoice > 0)
             {
                 if (isComputerTurn == true)
                 {
-
+                    //isHumanTurn to make a move then Computer makes a move afterwards
+                    //isComputerTurn = false
+                }
+                else
+                {
+                    //isHumanTurn
+                    //isDinosTurn
                 }
             }
 
