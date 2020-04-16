@@ -37,10 +37,11 @@ namespace RPSLS_Project
                 }
                 else
                 {
+                    //Computer waits for human input
                     //isHumanTurn
-                    //isDinosTurn
+                    //isComputerTurn = true
                 }
-            }
+            } 
 
         }
         public override void DisplayGesturesOptions()

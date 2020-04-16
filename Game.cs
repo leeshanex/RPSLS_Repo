@@ -22,17 +22,18 @@ namespace RPSLS_Project
         //membermethods
         public void RunGame()
         {
-            player1.DisplayGesturesOptions();
+            
+
             DisplayRules();
             ChooseGameMode();
-            
+            player1.DisplayGesturesOptions();
             player1.ChooseGesture();
             player2.ChooseGesture();
             
         }
         public void DisplayRules()
         {
-            Console.WriteLine(" Rock, Paper, Scissor, Lizard, Spock ");
+            Console.WriteLine("Welcome to Rock, Paper, Scissor, Lizard, Spock!! ");
             //Console.WriteLine(" Rules: " ); TO DO <<<
             //Rock>scissor
             //Paper>Rock

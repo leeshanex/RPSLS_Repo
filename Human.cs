@@ -19,22 +19,26 @@ namespace RPSLS_Project
             playerScore = 0;
         }
         //methods
-        public void HumanTurn()
-        {
-           
-        }
+        
         public override void DisplayGesturesOptions()
         {
-            Console.WriteLine("Pick your move");
+            Console.WriteLine("Please enter your gesture 0 - 4");
             foreach (string gestures in gestures)
             {
-                
-                for( int i = 0; i <= 4; i++)
-                {
-                    Console.WriteLine("[" + i + "]" + gestures);
-                }
+                Console.WriteLine(gestures);
+              
+                //for( int i = 0; i <= 4; i++)git
+                //{ 
+                //    Console.WriteLine("[" + i + "]" + gestures);
+                //}
             }
-
+        }
+        public override void ChooseGesture()
+        {
+            string userInput = Console.ReadLine();
+           
+            Console.WriteLine();
+           
         }
         //public void HumansChoice(int choices)
         //int gestureChoice = gestures.Count;
@@ -49,8 +53,8 @@ namespace RPSLS_Project
         //    Console.WriteLine();
 
 
-        public override void ChooseGesture()
-        {
+        //public override void ChooseGesture()
+        //{
             //This method will be setting the "gestureChoice" member variable to an actual choice , ie "rokc" or "spock", etc.
             //How does a human make that choice?
 
@@ -62,6 +66,6 @@ namespace RPSLS_Project
             //Console.WriteLine();
             //
             //int userInput = Convert.ToInt32(Console.ReadLine());
-        }
+        //}
     }
 }
