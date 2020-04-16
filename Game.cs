@@ -32,6 +32,7 @@ namespace RPSLS_Project
         {
             Console.WriteLine("Welcome to Rock, Paper, Scissor, Lizard, Spock!! ");
             //Console.WriteLine(" Rules: " ); TO DO <<<
+
             //Rock>scissor
             //Paper>Rock
             //Scissor>Paper
@@ -46,7 +47,9 @@ namespace RPSLS_Project
         }
         public void ChooseGameMode()
         {
-            Console.WriteLine(" Please enter 1 for One player mode, or 2 for Two player mode ");
+            Console.WriteLine(" 1) One player mode");
+            Console.WriteLine(" 2) Two player mode");
+            Console.WriteLine("Please enter mode (1 or 2)");
             bool validChoice = false;
             while (!validChoice)
             {
@@ -64,11 +67,10 @@ namespace RPSLS_Project
                 else
                 {
                     Console.WriteLine("Incorrect input please try again");
-
                 }
             }
         }
-        public void BattleRound()
+        public void CompareGestures()
         {
 
         }

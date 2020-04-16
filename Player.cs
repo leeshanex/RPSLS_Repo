@@ -16,11 +16,8 @@ namespace RPSLS_Project
 
         //constructor
         public Player()
-        {
-           
+        {  
             gestures = new List<string>() { "Rock", "Paper", "Scissor", "Lizard", "Spock" };
-            
-            
         }
         //methods
         public abstract void ChooseGesture();

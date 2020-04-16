@@ -28,9 +28,9 @@ namespace RPSLS_Project
             int gestureChoice = r.Next(gestures.Count);
           
             bool isComputerTurn = true;
-            while (gestureChoice > 0)
+            while (!isComputerTurn)
             {
-                if (isComputerTurn == true)
+                if (gestureChoice > 0)
                 {
                     //isHumanTurn to make a move then Computer makes a move afterwards
                     //isComputerTurn = false
