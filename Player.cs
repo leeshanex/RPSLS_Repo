@@ -15,7 +15,7 @@ namespace RPSLS_Project
        
 
         //constructor
-        public Player()
+        public Player(string gestureChoice)
         {
            
             gestures = new List<string>() { "Rock", "Paper", "Scissor", "Lizard", "Spock" };
