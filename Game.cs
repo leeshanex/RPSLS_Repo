@@ -157,10 +157,12 @@ namespace RPSLS_Project
             if (player1.playerScore == 3)
             {
                 Console.WriteLine("PLAYER 1 WINNER");
+                Console.WriteLine("Player1" + player1.playerScore + "points");
             }
             else if (player1.playerScore == 3)
             {
                 Console.WriteLine("PLAYER 2 WINNER");
+                Console.WriteLine("Player2" + player2.playerScore + "points");
             }
         }
         public void DisplayScore()
