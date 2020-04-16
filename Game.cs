@@ -28,12 +28,12 @@ namespace RPSLS_Project
             while (player1.playerScore < 3 && player2.playerScore < 3)
             {
                 DisplayScore();
-                DetermineWinner();
                 player1.DisplayGesturesOptions();
                 player1.ChooseGesture();
                 player2.ChooseGesture();
                 CompareGestures();
             }
+            DetermineWinner();
             Console.ReadLine();
         }
         public void DisplayRules()
@@ -161,13 +161,13 @@ namespace RPSLS_Project
         {
             if (player1.playerScore == 3)
             {
-                Console.WriteLine("PLAYER 1 WINNER");
                 Console.WriteLine("Player1 " + player1.playerScore + " points");
+                Console.WriteLine("PLAYER 1 WINNER");
             }
             else if (player2.playerScore == 3)
             {
-                Console.WriteLine("PLAYER 2 WINNER");
                 Console.WriteLine("Player2 " + player2.playerScore + " points");
+                Console.WriteLine("PLAYER 2 WINNER");
             }
         }
         
