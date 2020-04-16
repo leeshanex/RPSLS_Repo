@@ -59,6 +59,7 @@ namespace RPSLS_Project
                 {
                     Console.WriteLine("Computer Error");
                 }
+                Console.WriteLine("-------------------");
             }
         }
         public override void DisplayGesturesOptions()

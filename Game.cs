@@ -11,7 +11,7 @@ namespace RPSLS_Project
         //member variables
         public Player player1;
         public Player player2;
-
+     
         //constructor
         public Game()
         {
@@ -24,7 +24,7 @@ namespace RPSLS_Project
         {
             DisplayRules();
             ChooseGameMode();
-            do
+            while (player1.playerScore < 3 && player2.playerScore < 3)
             {
                 DisplayScore();
                 player1.DisplayGesturesOptions();
@@ -32,12 +32,8 @@ namespace RPSLS_Project
                 player2.ChooseGesture();
                 CompareGestures();
             }
-            while (player1.playerScore <= 3 && player2.playerScore <= 3);
             DetermineWinner();
-            {
-                Console.WriteLine("Play Again?");
-            }
-
+            Console.ReadLine();
         }
         public void DisplayRules()
         {
@@ -121,7 +117,7 @@ namespace RPSLS_Project
                     player2.playerScore += 1;
                     gestureComparasion = true;
                 }
-                else if (player2.gestureChoice == "Paper" && (player1.gestureChoice == "Paper" || player1.gestureChoice == "Spock"))
+                else if (player2.gestureChoice == "Paper" && (player1.gestureChoice == "Rock" || player1.gestureChoice == "Spock"))
                 {
                     Console.WriteLine("Paper Wins");
                     player2.playerScore += 1;
@@ -133,7 +129,7 @@ namespace RPSLS_Project
                     player2.playerScore += 1;
                     gestureComparasion = true;
                 }
-                else if (player2.gestureChoice == "Lizard" && (player1.gestureChoice == "Spock" || player1.gestureChoice == "Pape"))
+                else if (player2.gestureChoice == "Lizard" && (player1.gestureChoice == "Spock" || player1.gestureChoice == "Paper"))
                 {
                     Console.WriteLine("Lizard Wins");
                     player2.playerScore += 1;
@@ -148,10 +144,11 @@ namespace RPSLS_Project
                 else
                 {
                     Console.WriteLine("Draw");
+                    Console.WriteLine("____________________");
                     player1.playerScore += 0;
                     break;
                 }
-                
+                Console.WriteLine("____________________");
             }
         }
         public void DetermineWinner()
@@ -163,10 +160,6 @@ namespace RPSLS_Project
             else if (player1.playerScore == 3)
             {
                 Console.WriteLine("PLAYER 2 WINNER");
-            }
-            else
-            {
-
             }
         }
         public void DisplayScore()
