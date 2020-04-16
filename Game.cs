@@ -24,6 +24,7 @@ namespace RPSLS_Project
         {
             DisplayRules();
             ChooseGameMode();
+            DisplayScore();
             player1.DisplayGesturesOptions();
             player1.ChooseGesture();
             player2.ChooseGesture();
@@ -40,6 +41,7 @@ namespace RPSLS_Project
             Console.WriteLine("|> Lizard beats Spock & Paper     <|");
             Console.WriteLine("|> Spock beats Scissors & Rock    <|");
             Console.WriteLine("|__________________________________|");
+            Console.WriteLine("******First to score three points win!******");
         }
         public void ChooseGameMode()
         {
@@ -74,7 +76,7 @@ namespace RPSLS_Project
             bool gestureComparasion = false;
             while (!gestureComparasion)
             {
-                if (player1.gestureChoice == "Rock" && player2.gestureChoice == "Scissors" + "Lizard")
+                if (player1.gestureChoice == "Rock" && player2.gestureChoice == ("Scissors" || "Lizard"))
                 {
                     Console.WriteLine("Rock Wins");
                     player1.playerScore += 1;
@@ -108,8 +110,13 @@ namespace RPSLS_Project
                 {
 
                 }
-                Console.ReadLine();
+                
             }
+        }
+        public void DisplayScore()
+        {
+            Console.WriteLine("Player1 " + player1.playerScore + " points");
+            Console.WriteLine("Player2 " + player2.playerScore + " points");
         }
 
     }
