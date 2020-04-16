@@ -17,6 +17,7 @@ namespace RPSLS_Project
              
         }
         //methods
+       
         public override void ChooseGesture()
         {
             
@@ -40,6 +41,10 @@ namespace RPSLS_Project
                     //isDinosTurn
                 }
             }
+
+        }
+        public override void DisplayGesturesOptions()
+        {
 
         }
     }

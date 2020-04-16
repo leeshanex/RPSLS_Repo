@@ -22,19 +22,33 @@ namespace RPSLS_Project
         //membermethods
         public void RunGame()
         {
+            player1.DisplayGesturesOptions();
             DisplayRules();
             ChooseGameMode();
+            
             player1.ChooseGesture();
             player2.ChooseGesture();
+            
         }
         public void DisplayRules()
         {
             Console.WriteLine(" Rock, Paper, Scissor, Lizard, Spock ");
-            ///Console.WriteLine(" Rules: " ); TO DO <<<
+            //Console.WriteLine(" Rules: " ); TO DO <<<
+            //Rock>scissor
+            //Paper>Rock
+            //Scissor>Paper
+            //Rock>Lizard
+            //Lizard>Spock
+            //Spock>Scissor
+            //Scissor>Lizard
+            //Lizard>Paper
+            //Paper>Spock
+            //Spock>Rock
+
         }
         public void ChooseGameMode()
         {
-            Console.WriteLine("Please enter 1 for One player mode, or 2 for Two player mode");
+            Console.WriteLine(" Please enter 1 for One player mode, or 2 for Two player mode ");
             string userInput = Console.ReadLine();
             if(userInput == "1")
             {
@@ -47,6 +61,7 @@ namespace RPSLS_Project
             else
             {
                 Console.WriteLine("Incorrect input please try again");
+                
             }
 
         }
