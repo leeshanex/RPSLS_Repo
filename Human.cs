@@ -68,7 +68,6 @@ namespace RPSLS_Project
                 {
                     Console.WriteLine("Wrong input please try again");
                 }
-                Console.ReadLine();
             }
         }
         
