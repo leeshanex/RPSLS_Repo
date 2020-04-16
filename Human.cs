@@ -22,7 +22,7 @@ namespace RPSLS_Project
         
         public override void DisplayGesturesOptions()
         {
-            Console.WriteLine("Please enter your gesture 0 - 4");
+            Console.WriteLine("Your move, please enter 0 - 4");
                 for (int i = 0; i <= 4; i++)
                 {
                     Console.WriteLine("[" + i + "]" + gestures[i]);
@@ -33,35 +33,35 @@ namespace RPSLS_Project
             bool validChoice = false;
             while (!validChoice)
             {
-                int userInput = Convert.ToInt32(Console.ReadLine());
-                if (userInput == 0)
+               string userInput = Console.ReadLine();
+                if (userInput == "0")
                 {
                     gestureChoice = "Rock";
                     Console.WriteLine("Rock");
                     validChoice = true;
                 }
-                else if (userInput == 1)
+                else if (userInput == "1")
                 {
                     gestureChoice = "Paper";
-                    Console.WriteLine();
+                    Console.WriteLine("Paper");
                     validChoice = true;
                 }
-                else if (userInput == 2)
+                else if (userInput == "2")
                 {
-                    gestureChoice = "Scissor";
-                    Console.WriteLine();
+                    gestureChoice = "Scissors";
+                    Console.WriteLine("Scissors");
                     validChoice = true;
                 }
-                else if (userInput == 3)
+                else if (userInput == "3")
                 {
                     gestureChoice = "Lizard";
-                   Console.WriteLine();
+                   Console.WriteLine("Lizard");
                     validChoice = true;
                 }
-                else if (userInput == 4)
+                else if (userInput == "4")
                 {
                     gestureChoice = "Spock";
-                   Console.WriteLine();
+                   Console.WriteLine("Spock");
                     validChoice = true;
                 }
                 else

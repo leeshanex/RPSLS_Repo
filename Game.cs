@@ -30,8 +30,15 @@ namespace RPSLS_Project
         }
         public void DisplayRules()
         {
-            Console.WriteLine("Welcome to Rock, Paper, Scissor, Lizard, Spock!! ");
-            //Console.WriteLine(" Rules: " ); TO DO <<<
+            Console.WriteLine("Welcome to The Rock, Paper, Scissors, Lizard, Spock Game!! ");
+            Console.WriteLine("Rules: The original Rock, Paper, Scissors game but with two additional hand gestures. ");
+            Console.WriteLine("|``````````````````````````````````|");
+            Console.WriteLine("|> Rock crushes Scissors & Lizard <|");
+            Console.WriteLine("|> Paper beats Rock & Spock       <|");
+            Console.WriteLine("|> Scissors cuts Paper & Lizard   <|");
+            Console.WriteLine("|> Lizard beats Spock & Paper     <|");
+            Console.WriteLine("|> Spock beats Scissors & Rock    <|");
+            Console.WriteLine("|__________________________________|");
 
             //Rock>scissor
             //Paper>Rock
@@ -47,9 +54,12 @@ namespace RPSLS_Project
         }
         public void ChooseGameMode()
         {
-            Console.WriteLine(" 1) One player mode");
-            Console.WriteLine(" 2) Two player mode");
-            Console.WriteLine("Please enter mode (1 or 2)");
+            Console.WriteLine(" |Game Modes|");
+            Console.WriteLine("````````````````");
+            Console.WriteLine(" 1) Vs. Computer");
+            Console.WriteLine(" 2) Vs. Player");
+            Console.WriteLine("Please enter game mode (1 or 2)");
+
             bool validChoice = false;
             while (!validChoice)
             {
