@@ -22,14 +22,11 @@ namespace RPSLS_Project
         //membermethods
         public void RunGame()
         {
-            
-
             DisplayRules();
             ChooseGameMode();
             player1.DisplayGesturesOptions();
             player1.ChooseGesture();
-            player2.ChooseGesture();
-            
+            player2.ChooseGesture();  
         }
         public void DisplayRules()
         {
@@ -50,21 +47,31 @@ namespace RPSLS_Project
         public void ChooseGameMode()
         {
             Console.WriteLine(" Please enter 1 for One player mode, or 2 for Two player mode ");
-            string userInput = Console.ReadLine();
-            if(userInput == "1")
+            bool validChoice = false;
+            while (!validChoice)
             {
-                player2 = new Computer();
+                string userInput = Console.ReadLine();
+                if (userInput == "1")
+                {
+                    player2 = new Computer();
+                    validChoice = true;
+                }
+                else if (userInput == "2")
+                {
+                    player2 = new Human();
+                    validChoice = true;
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect input please try again");
+
+                }
             }
-            else if (userInput == "2")
-            {
-                player2 = new Human();
-            }
-            else
-            {
-                Console.WriteLine("Incorrect input please try again");
-                
-            }
+        }
+        public void BattleRound()
+        {
 
         }
+
     }
 }

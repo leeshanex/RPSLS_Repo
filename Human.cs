@@ -23,22 +23,46 @@ namespace RPSLS_Project
         public override void DisplayGesturesOptions()
         {
             Console.WriteLine("Please enter your gesture 0 - 4");
-            foreach (string gestures in gestures)
-            {
-                Console.WriteLine(gestures);
-              
-                //for( int i = 0; i <= 4; i++)git
-                //{ 
-                //    Console.WriteLine("[" + i + "]" + gestures);
-                //}
-            }
+            //foreach (string gestures in gestures)
+            
+                for (int i = 0; i <= 4; i++)
+                {
+                    Console.WriteLine("[" + i + "]" + gestures[i]);
+                }
+          
         }
         public override void ChooseGesture()
         {
-            string userInput = Console.ReadLine();
-           
-            Console.WriteLine();
-           
+            int userInput = Convert.ToInt32(Console.ReadLine());
+           if(userInput == 0)
+            {
+                gestureChoice = "Rock";
+                Console.WriteLine("Rock");
+            }
+           else if (userInput == 1)
+            {
+                gestureChoice = "Paper";
+                Console.WriteLine();
+            }
+           else if (userInput == 2)
+            {
+                Console.WriteLine( );
+            }
+           else if (userInput == 3 )
+            {
+                Console.WriteLine(  );
+            }
+           else if (userInput == 4 )
+            {
+                Console.WriteLine(  );
+            }
+           else
+            {
+                Console.WriteLine("Wrong input please try again");
+                Console.ReadLine();
+            }
+
+            
         }
         //public void HumansChoice(int choices)
         //int gestureChoice = gestures.Count;
