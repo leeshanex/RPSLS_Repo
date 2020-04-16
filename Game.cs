@@ -28,11 +28,11 @@ namespace RPSLS_Project
             while (player1.playerScore < 3 && player2.playerScore < 3)
             {
                 DisplayScore();
+                DetermineWinner();
                 player1.DisplayGesturesOptions();
                 player1.ChooseGesture();
                 player2.ChooseGesture();
                 CompareGestures();
-                DetermineWinner();
             }
             Console.ReadLine();
         }
@@ -76,6 +76,11 @@ namespace RPSLS_Project
                     Console.WriteLine("Incorrect input please try again");
                 }
             }
+        }
+        public void DisplayScore()
+        {
+            Console.WriteLine("Player1 " + player1.playerScore + " points");
+            Console.WriteLine("Player2 " + player2.playerScore + " points");
         }
         public void CompareGestures()
         {
@@ -157,19 +162,15 @@ namespace RPSLS_Project
             if (player1.playerScore == 3)
             {
                 Console.WriteLine("PLAYER 1 WINNER");
-                Console.WriteLine("Player1" + player1.playerScore + "points");
+                Console.WriteLine("Player1 " + player1.playerScore + " points");
             }
-            else if (player1.playerScore == 3)
+            else if (player2.playerScore == 3)
             {
                 Console.WriteLine("PLAYER 2 WINNER");
-                Console.WriteLine("Player2" + player2.playerScore + "points");
+                Console.WriteLine("Player2 " + player2.playerScore + " points");
             }
         }
-        public void DisplayScore()
-        {
-            Console.WriteLine("Player1 " + player1.playerScore + " points");
-            Console.WriteLine("Player2 " + player2.playerScore + " points");
-        }
+        
 
     }
 }
