@@ -39,18 +39,6 @@ namespace RPSLS_Project
             Console.WriteLine("|> Lizard beats Spock & Paper     <|");
             Console.WriteLine("|> Spock beats Scissors & Rock    <|");
             Console.WriteLine("|__________________________________|");
-
-            //Rock>scissor
-            //Paper>Rock
-            //Scissor>Paper
-            //Rock>Lizard
-            //Lizard>Spock
-            //Spock>Scissor
-            //Scissor>Lizard
-            //Lizard>Paper
-            //Paper>Spock
-            //Spock>Rock
-
         }
         public void ChooseGameMode()
         {
