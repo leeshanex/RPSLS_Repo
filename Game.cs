@@ -84,68 +84,68 @@ namespace RPSLS_Project
         }
         public void CompareGestures()
         {
-            bool gestureComparasion = false;
-            while (!gestureComparasion)
+            bool gestureComparision = false;
+            while (!gestureComparision)
             {
                 if (player1.gestureChoice == "Rock" && (player2.gestureChoice == "Scissors" || player2.gestureChoice == "Lizard"))
                 {
                     Console.WriteLine("Rock Wins");
                     player1.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player1.gestureChoice == "Paper" && (player2.gestureChoice == "Rock" || player2.gestureChoice == "Spock"))
                 {
                     Console.WriteLine("Paper Wins");
                     player1.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player1.gestureChoice == "Scissors" && (player2.gestureChoice == "Paper" || player2.gestureChoice == "Lizard"))
                 {
                     Console.WriteLine("Scissors Wins");
                     player1.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player1.gestureChoice == "Lizard" && (player2.gestureChoice == "Spock" || player2.gestureChoice == "Paper"))
                 {
                     Console.WriteLine("Lizard Wins");
                     player1.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player1.gestureChoice == "Spock" && (player2.gestureChoice == "Scissors" || player2.gestureChoice == "Rock"))
                 {
                     Console.WriteLine("Spock Wins");
                     player1.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player2.gestureChoice == "Rock" && (player1.gestureChoice == "Scissors" || player1.gestureChoice == "Lizard"))
                 {
                     Console.WriteLine("Rock Wins");
                     player2.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player2.gestureChoice == "Paper" && (player1.gestureChoice == "Rock" || player1.gestureChoice == "Spock"))
                 {
                     Console.WriteLine("Paper Wins");
                     player2.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player2.gestureChoice == "Scissors" && (player1.gestureChoice == "Paper" || player1.gestureChoice == "Lizard"))
                 {
                     Console.WriteLine("Scissors Wins");
                     player2.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player2.gestureChoice == "Lizard" && (player1.gestureChoice == "Spock" || player1.gestureChoice == "Paper"))
                 {
                     Console.WriteLine("Lizard Wins");
                     player2.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else if (player2.gestureChoice == "Spock" && (player1.gestureChoice == "Scissors" || player1.gestureChoice == "Rock"))
                 {
                     Console.WriteLine("Spock Wins");
                     player2.playerScore += 1;
-                    gestureComparasion = true;
+                    gestureComparision = true;
                 }
                 else
                 {
