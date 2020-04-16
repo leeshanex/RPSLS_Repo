@@ -26,7 +26,8 @@ namespace RPSLS_Project
             ChooseGameMode();
             player1.DisplayGesturesOptions();
             player1.ChooseGesture();
-            player2.ChooseGesture();  
+            player2.ChooseGesture();
+            CompareGestures();
         }
         public void DisplayRules()
         {
@@ -70,7 +71,45 @@ namespace RPSLS_Project
         }
         public void CompareGestures()
         {
+            bool gestureComparasion = false;
+            while (!gestureComparasion)
+            {
+                if (player1.gestureChoice == "Rock" && player2.gestureChoice == "Scissors" + "Lizard")
+                {
+                    Console.WriteLine("Rock Wins");
+                    player1.playerScore += 1;
+                    gestureComparasion = true;
+                }
+                else if (player1.gestureChoice == "Paper" & player2.gestureChoice == "Rock" + "Spock")
+                {
+                    Console.WriteLine("Paper Wins");
+                    player1.playerScore += 1;
+                    gestureComparasion = true;
+                }
+                else if (player1.gestureChoice == "Scissors" & player2.gestureChoice == "Paper" + "Lizard")
+                {
+                    Console.WriteLine("Scissors Wins");
+                    player1.playerScore += 1;
+                    gestureComparasion = true;
+                }
+                else if (player1.gestureChoice == "Lizard" & player2.gestureChoice == "Spock" + "Paper")
+                {
+                    Console.WriteLine("Lizard Wins");
+                    player1.playerScore += 1;
+                    gestureComparasion = true;
+                }
+                else if (player1.gestureChoice == "Spock" & player2.gestureChoice == "Scissor" + "Rock")
+                {
+                    Console.WriteLine("Spock Wins");
+                    player1.playerScore += 1;
+                    gestureComparasion = true;
+                }
+                else
+                {
 
+                }
+                Console.ReadLine();
+            }
         }
 
     }
