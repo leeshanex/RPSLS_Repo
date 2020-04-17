@@ -152,6 +152,7 @@ namespace RPSLS_Project
                     Console.WriteLine("Draw");
                     Console.WriteLine("____________________");
                     player1.playerScore += 0;
+                    player2.playerScore += 0;
                     break;
                 }
                 Console.WriteLine("____________________");
